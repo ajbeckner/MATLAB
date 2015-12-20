@@ -1,0 +1,7 @@
+hist:false
+mean:false
+std:false
+var:false
+outliers:false
+velocity:false
+loop:false

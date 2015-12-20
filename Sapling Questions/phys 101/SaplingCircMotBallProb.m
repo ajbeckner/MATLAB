@@ -1,0 +1,15 @@
+l = input('What is the length of the string in meters?');
+m = input('What is the mass of the ball in kg?');
+v = input('What is the speed of the ball in m/s ?');
+%r = ((l*cos(angle))^2 + (l*sin(angle))^2)^(1/2);
+g = 9.81;
+%Tx = (m*v*v)/((l*cos(angle))^2 + (l*sin(angle))^2)^(1/2);
+Ty = m*g;
+a = Ty*l;
+b = m*v*v;
+c = -Ty*l;
+angle1 = acosd((-b + (abs(b^2 - 4*a*c))^(1/2))/(2*a))
+angle2 = acosd((-b - (abs(b^2 - 4*a*c))^(1/2))/(2*a))
+angle = input('What is the measure of the real angle?');
+T = Ty/cosd(angle)
+%T = (Tx^2 + Ty^2)^(1/2)
